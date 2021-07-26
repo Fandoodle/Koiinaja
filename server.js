@@ -78,11 +78,11 @@ app.post("/", (req, res)=>{
     res.sendFile(__dirname + "/Thankyou.html");
 });
 
-app.get(".", (req, res) => {
+app.get("/", (req, res) => {
     res.sendFile(__dirname + "/Thankyou.html");
 })
 
-app.post(".", (req, res)=>{
+app.post("/", (req, res)=>{
     var info={
         name: req.body.name,
         emails: req.body.emails,
