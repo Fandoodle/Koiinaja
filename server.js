@@ -69,6 +69,6 @@ app.post("/", (req, res)=>{
     res.sendFile(__dirname + "/Thankyou.html");
 });
 
-app.listen(8080, function(){
+app.listen(process.env.PORT || 8080, function(){
     console.log("server is running on 8080");
 })
