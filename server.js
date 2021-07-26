@@ -10,8 +10,7 @@ mongoose.connect("mongodb+srv://123:123@cluster1.yeojp.mongodb.net/koi",{ useUni
 
 var notesSchema1 = new mongoose.Schema({
     name: String,
-    email: String,
-    email: String,
+    emails: String,
     subject: String,
     message: String,
 
@@ -86,7 +85,7 @@ app.get(".", (req, res) => {
 app.post(".", (req, res)=>{
     var info={
         name: req.body.name,
-        email: req.body.email,
+        emails: req.body.emails,
         subject: req.body.subject,
         message: req.body.message,
     };
