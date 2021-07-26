@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>KOI-In Aja!</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/logo2.jpg" rel="icon">
+  <link href="assets/img/logo1.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i,900" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <section id="topbar" class="d-none d-lg-block">
+    <div class="container clearfix">
+      <div class="contact-info float-left">
+        <i class="icofont-envelope"></i><a href="mailto:koiinaja01@gmail.com">koiinaja01@gmail.com</a>
+        <i class="icofont-phone"></i> +62 8128 2705 714
+      </div>
+      <div class="social-links float-right">
+        <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
+        <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
+        <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
+		<a href="#" class="google-plus"><i class="icofont-google-plus"></i></a>
+      </div>
+    </div>
+  </section>
+  <main id="main">
+
+    <!-- ======= Breadcrumbs Section ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Pemesanan</h2>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+			<li><a href="fish-details.html">Fish Details</a></li>
+            <li>Pemesanan</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs Section -->
+</main><!-- End #main -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 order-md-1" data-aos="fade-up" data-aos-delay="300">
+          <br><h3 class="mb-3 text-center">Detail Pemesanan</h3>
+          <form class="needs-validation" method="post" action="/"  novalidate data-aos="fade-up" data-aos-delay="300">
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="firstName">Nama Depan</label>
+                <input type="text" class="form-control" name="firstname" id="firstName" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Valid first name is required.
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="lastName">Nama Belakang</label>
+                <input type="text" class="form-control" name="lastname" id="lastName" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Valid last name is required.
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" name="email" id="email" placeholder="">
+              <div class="invalid-feedback">
+                Isi email dengan benar.
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="address">Alamat</label>
+              <input type="text" class="form-control" name="address" id="address" placeholder="" required>
+              <div class="invalid-feedback">
+                Isi alamat Anda.
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="address2">Alamat 2<span class="text-muted"> (Opsional)</span></label>
+              <input type="text" class="form-control" name="address2" id="address2" placeholder="">
+            </div>
+
+            <div class="row">
+              <div class="col-md-5 mb-3">
+                <label for="country">Negara</label>
+                <input type="text" class="form-control" name="country" id="country" placeholder="" required>
+                <div class="invalid-feedback">
+                 Negara tidak terdaftar.
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+               <label for="state">Kota</label>
+                <input type="text" class="form-control" name="state" id="state" placeholder="" required>
+                <div class="invalid-feedback">
+                 Kota tidak terdaftar.
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="zip">Zip</label>
+                <input type="text" class="form-control" name="zip" id="zip" placeholder="" required>
+                <div class="invalid-feedback">
+                  Zip tidak terdaftar.
+                </div>
+              </div>
+            </div>
+
+            <hr class="mb-4">
+			<h3 class="mb-3 text-center" data-aos="fade-up" data-aos-delay="300">Detail Ikan</h3>
+			<div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="Jenisikan">Pilih Koi</label>
+                <select class="custom-select d-block w-100" name="jenisIkan" id="Jenis ikan" required>
+                  <option value="">Choose...</option>
+                  <option>Asagi</option>
+				  <option>Beni Kumonryu</option>
+				  <option>Doitsu Hariwake</option>
+				  <option>Kohaku</option>
+				  <option>Goshiki</option>
+				  <option>Shushui</option>
+                </select>
+			  </div>
+              <div class="col-md-6 mb-3">
+                <label for="Jumlahikan">Jumlah Koi</label>
+                <input type="number" min="1" max="99" class="form-control" name="jumlahIkan" id="Jumlahikan" placeholder="" value="" required>
+              </div>
+            </div>
+			<hr class="mb-4">
+            <h3 class="mb-3 text-center" data-aos="fade-up" data-aos-delay="100">Pembayaran</h3>
+			<h4 class="mb-3"data-aos="fade-up" data-aos-delay="100" >Pilih Metode Pembayaran</h4>
+            <div class="d-block my-3"data-aos="fade-up" data-aos-delay="100" >
+              <div class="custom-control custom-radio">
+                <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
+                <label class="custom-control-label" for="credit">Kartu Kredit</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
+                <label class="custom-control-label" for="debit">Kartu Debit</label>
+              </div>
+            </div>
+            <div class="row" data-aos="fade-up" data-aos-delay="100">
+              <div class="col-md-6 mb-3">
+                <label for="cc-name">Nama pada Kartu</label>
+                <input type="text" class="form-control" name="ccName" id="cc-name" placeholder="" required>
+                <small class="text-muted">Nama lengkap yang tertera pada kartu.</small>
+                <div class="invalid-feedback">
+                  Nama pada kartu dibutuhkan.
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="cc-number">Nomor Kartu</label>
+                <input type="text" class="form-control" name="ccNumber" id="cc-number" placeholder="" required>
+                <div class="invalid-feedback">
+                  Nomor pada kartu dibutuhkan.
+                </div>
+              </div>
+            </div>
+            <div class="row" data-aos="fade-up" data-aos-delay="100">
+              <div class="col-md-3 mb-3">
+                <label for="cc-expiration">Masa Tenggang</label>
+                <input type="text" class="form-control" name="ccExpiration" id="cc-expiration" placeholder="mm/yy" required>
+                <div class="invalid-feedback">
+                  Expiration date required
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="cc-expiration">CVV</label>
+                <input type="text" class="form-control" name="ccCvv" id="cc-cvv" placeholder="xyz" required>
+                <div class="invalid-feedback">
+                  Security code required
+                </div>
+              </div>
+            </div>
+            <hr class="mb-4" data-aos="fade-up" data-aos-delay="100">
+				<div class="col-md-12 mb-3 text-center">
+					<button class="btn btn-danger btn-lg" type="submit" value="submit">Pre-Order Now!</button>
+				</div><br>
+          </form>
+        </div>
+      </div>
+	</div>
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-info">
+            <h3>Contact Us</h3>
+            <p>
+              Jl.H. Mahjur RT.013/02 <br>
+			  Lenteng Agung, Jagakarsa, <br>
+			  Kota Jakarta Selatan, 12610. <br>
+              Jakarta, Indonesia<br><br>
+              <strong>Telepon:</strong> +62 812 8270 5714<br>
+              <strong>Email:</strong> koiinaja01@gmail.com<br>
+            </p>
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+			  <a href="#" class="google"><i class="bx bxl-google-plus"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+				<h3>Operational Hour</h3>
+					<p><span class="text-color">Senin-Jum'at :</span> 10:00 AM - 9:00 PM</p>
+					<p><span class="text-color">Sabtu-Minggu :</span> 2:00 PM - 9:00 PM</p>
+		  </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Newsletter</h4>
+            <p>Dapatkan berita serta promo menarik dari kami.</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe Now">
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>KOI-In Aja!</span></strong>. All Rights Reserved
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/jquery-sticky/jquery.sticky.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/counterup.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
