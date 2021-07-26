@@ -8,6 +8,16 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 mongoose.connect("mongodb+srv://123:123@cluster1.yeojp.mongodb.net/koi",{ useUnifiedTopology: true , useCreateIndex: true, useNewUrlParser: true })
 
+var notesSchema1 = new mongoose.Schema({
+    name: String,
+    email: String,
+    email: String,
+    subject: String,
+    message: String,
+
+});
+var pesan = mongoose.model ('pesan', notesSchema1);
+
 var notesSchema = new mongoose.Schema({
     firstname: String,
     lastname: String,
@@ -67,6 +77,24 @@ app.post("/", (req, res)=>{
         }
     });
     res.sendFile(__dirname + "/Thankyou.html");
+});
+
+app.post("/", (req, res)=>{
+    var info={
+        name: req.body.name,
+        email: req.body.email,
+        subject: req.body.subject,
+        message: req.body.message,
+    };
+    var me = new pesan (info);
+    me.save (function(err){
+        if(err){
+            console.log('error');
+        } else{
+            console.log('done');
+        }
+    });
+    res.sendFile(__dirname + "/index.html");
 });
 
 app.listen(process.env.PORT || 8080, function(){
