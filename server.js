@@ -8,14 +8,14 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 mongoose.connect("mongodb+srv://123:123@cluster1.yeojp.mongodb.net/koi",{ useUnifiedTopology: true , useCreateIndex: true, useNewUrlParser: true })
 
-var notesSchema1 = new mongoose.Schema({
+var notesSchema = new mongoose.Schema({
     name: String,
     emails: String,
     subject: String,
     message: String,
 
 });
-var pesan = mongoose.model ('pesan', notesSchema1);
+var pesan = mongoose.model ('pesan', notesSchema);
 
 var notesSchema = new mongoose.Schema({
     firstname: String,
