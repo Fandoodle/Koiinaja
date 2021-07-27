@@ -37,6 +37,12 @@ var notesSchema = new mongoose.Schema({
 });
 var pemesanan = mongoose.model ('pemesanan', notesSchema);
 
+var newsscema = new mongoose.Schema({
+    newsemail: String,
+
+});
+var news = mongoose.model ('news', newsscema );
+
 mongoose.connection.once("open", function(){
     console.log("connection made");
 }).on("error", function(error){
@@ -99,6 +105,26 @@ app.post("/", (req, res)=>{
     });
     res.sendFile(__dirname + "/Thankyou.html");
 });
-app.listen(process.env.PORT || 8080, function(){
-    console.log("server is running on 8080");
+
+app.get("/news", (req, res) => {
+    res.sendFile(__dirname + "/index.html");
+})
+
+app.post("/news", (req, res)=>{
+    var info= {
+        newsemail: req.body.newsemail,
+    };
+    var im = new news (info);
+    im.save (function(err){
+        if(err){
+            console.log('error');
+        } else{
+            console.log('done');
+        }
+    });
+    res.sendFile(__dirname + "/index.html");
+});
+
+app.listen(3000, function(){
+    console.log("server is running on 3000");
 })
