@@ -125,6 +125,6 @@ app.post("/news", (req, res)=>{
     res.sendFile(__dirname + "/index.html");
 });
 
-app.listen(3000, function(){
-    console.log("server is running on 3000");
+app.listen(process.env.PORT || 8080, function(){
+    console.log("server is running on 8080");
 })
